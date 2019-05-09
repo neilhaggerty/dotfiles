@@ -11,9 +11,11 @@ export TERM=xterm-256color
 
 ## Aliases ####################################################################
 alias ll="ls -al"
+alias note="vim ~/dev/notes/notes.md"
+alias play="cd ~/dev/personal"
 alias whatsmyip="curl -s http://checkip.dyndns.org | sed 's/[a-zA-Z<>/ :]//g'"
 ###############################################################################
 
 ## PATH Setup #################################################################
-
+export PATH="/usr/local/sbin:$PATH"                                                
 ###############################################################################
