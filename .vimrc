@@ -37,6 +37,10 @@ augroup END
 " ============================================================================  
 call plug#begin('~/.vim/plugged')                                                  
 Plug 'https://github.com/PProvost/vim-ps1.git'                                     
-Plug 'vim-airline/vim-airline'                                                     
+Plug 'vim-airline/vim-airline'
+Plug 'vim-syntastic/syntastic'
 call plug#end()                                                                    
+" ============================================================================
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open = 1
 " ============================================================================
