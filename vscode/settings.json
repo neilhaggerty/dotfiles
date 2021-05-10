@@ -1,0 +1,42 @@
+{
+    "yaml.schemas": {
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDelete": false,
+    "go.testOnSave": true,
+    "editor.minimap.enabled": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "newUntitledFile",
+    "terraform.languageServer": {
+
+
+        "external": true,
+        "pathToBinary": "",
+        "args": [
+            "serve",
+            "-tf-exec=/usr/local/bin/terraform",
+        ],
+        "maxNumberOfProblems": 100,
+        "trace.server": "off"
+    },
+    "[terraform]": {
+        "editor.formatOnSave": true
+    },
+    "git.autofetch": true,
+    "terminal.explorerKind": "external",
+    "terminal.integrated.shell.osx": "/Users/neil.haggerty/code/vscode-terminal.sh",
+    "terraform-ls.experimentalFeatures": {
+      "validateOnSave": false
+    },
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "atlascode.bitbucket.pipelines.explorerEnabled": false,
+    "atlascode.bitbucket.issues.explorerEnabled": false,
+    "atlascode.helpExplorerEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "workbench.colorTheme": "One Dark Pro"
+}
