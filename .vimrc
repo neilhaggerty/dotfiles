@@ -44,3 +44,8 @@ call plug#end()
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 " ============================================================================
+" ==================== Terraform plugin config ===============================
+let g:terraform_align=1
+" ============================================================================
+" ==================== Syntax Hightlighting ==================================
+au BufNewFile,BufRead Jenkinsfile setf groovy
