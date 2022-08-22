@@ -1,6 +1,28 @@
 {
     "yaml.schemas": {
     },
+     // Custom tags for the parser to use
+     "yaml.customTags": [
+        "!And",
+        "!If",
+        "!Not",
+        "!Equals",
+        "!Or",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Join sequence"
+    ],
+    // Enable/disable default YAML formatter (requires restart)
+    "yaml.format.enable": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "explorer.confirmDelete": false,
     "go.testOnSave": true,
@@ -8,8 +30,6 @@
     "workbench.iconTheme": "vscode-icons",
     "workbench.startupEditor": "newUntitledFile",
     "terraform.languageServer": {
-
-
         "external": true,
         "pathToBinary": "",
         "args": [
@@ -24,19 +44,82 @@
     },
     "git.autofetch": true,
     "terminal.explorerKind": "external",
-    "terminal.integrated.shell.osx": "/Users/neil.haggerty/code/vscode-terminal.sh",
     "terraform-ls.experimentalFeatures": {
       "validateOnSave": false
     },
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "atlascode.bitbucket.pipelines.explorerEnabled": false,
     "atlascode.bitbucket.issues.explorerEnabled": false,
     "atlascode.helpExplorerEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "workbench.colorTheme": "One Dark Pro"
+    "redhat.telemetry.enabled": false,
+    "git.confirmSync": false,
+    "files.associations": {
+        "*.tfvars": "terraform"
+    },
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "shellcheck.run": "onSave",
+    "python.linting.prospectorEnabled": true,
+    "python.autoComplete.addBrackets": true,
+    "python.defaultInterpreterPath": "/Library/Frameworks/Python.framework/Versions/3.9/bin/python3",
+    "python.venvPath": "${workspaceFolder}/.venv",
+    "python.analysis.completeFunctionParens": true,
+    "terminal.integrated.fontFamily": "UbuntuMono Nerd Font",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.profiles.osx": {
+        "neil": {
+            "path": "/Users/neil.haggerty/code/vscode-terminal.sh"
+        },
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
+        },
+        "fish": {
+            "path": "fish",
+            "args": [
+                "-l"
+            ]
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "zsh (migrated)": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.osx": "buoy",
+    "python.linting.prospectorArgs": [
+        "--strictness",
+        "veryhigh",
+        "--no-autodetect",
+        "--max-line-lenth 100"
+    ],
+    "python.venvFolders": [
+        "${workspaceFolder}/test/.venv"
+    ],
+    "vscode-kubernetes.helm-path": "/usr/local/bin/helm3",
+    "vscode-kubernetes.kubectl-path": "/usr/local/bin/kubectl",
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "GitHub Dark Default"
 }
