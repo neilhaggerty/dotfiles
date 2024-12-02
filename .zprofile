@@ -15,6 +15,8 @@ export HOMEBREW_BUNDLE_FILE="/Users/neil.haggerty/Resources/Brewfile"
 export MYVIMRC="$HOME/.vimrc"
 ############################### Homebrew ######################################
 eval "$(/opt/homebrew/bin/brew shellenv)"
+############################### Fast Node Manager (fnm) ######################
+eval "$(fnm env --use-on-cd --shell zsh)"
 ############################## PATH ###########################################
 PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"
 export PATH
@@ -51,7 +53,7 @@ alias debugpod="kubectl run -i --tty --rm debug-nh --image=alpine --restart=Neve
 alias ku="k9s"
 alias kcx="kcs"
 alias kns="kcns"
-alias ll="exa -al"
+alias ll="eza -al"
 alias pon='f(){kubectl get pods --all-namespaces --field-selector spec.nodeName="$1"};f'
 alias terradocs='docker run \
     -v $PWD:/module \
