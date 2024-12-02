@@ -10,5 +10,5 @@ ln -sf $PWD/Brewfile ~/Resources/Brewfile
 brew bundle install
 mkdir -p ~/.config
 ln -s $PWD/starship/starship.toml ~/.config/starship.toml
-ln -s $PWD/zsh_exe ~/Resources/zsh_exe
+ln -s $PWD/zsh_exe ../zsh_exe
 ```
