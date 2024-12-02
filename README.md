@@ -1,9 +1,8 @@
 # dotfiles
 
-### eslint
-
-Command to install:
-
 ```
-npm install --save-dev eslint-plugin-import@^#.#.# eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-react@^#.#.#
+cd dotfiles
+brew bundle check --file Brewfile.minimal
+brew bundle install --file Brewfile.minimal
+ln -sf $PWD/.zprofile ~/.zprofile
 ```

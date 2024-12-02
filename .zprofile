@@ -11,6 +11,8 @@ export HISTSIZE=5000
 export STARSHIP_CONFIG=/Users/neil.haggerty/Resources/starship/starship.toml
 export PYENV_ROOT="$HOME/.pyenv"
 export GOPATH="$HOME/go"
+export HOMEBREW_BUNDLE_FILE="/Users/neil.haggerty/Resources/Brewfile"
+export MYVIMRC="$HOME/.vimrc"
 ############################### Homebrew ######################################
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ############################## PATH ###########################################

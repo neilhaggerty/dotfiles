@@ -50,6 +50,12 @@ autocmd Filetype yaml setlocal tabstop=2 shiftwidth=2 expandtab
 " "   au BufReadPre * setlocal foldmethod=indent
 " "   au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
 " " augroup END
+" " install vim-plug
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 " ============================================================================  
 " " plugin settings (vim-plug)                                                                 
 " ============================================================================  
