@@ -37,3 +37,7 @@ brew "yaml-language-server"
 brew "yq"
 brew "zellij"
 brew "zlib"
+mas "Dark Reader for Safari", id: 1438243180
+mas "HazeOver", id: 430798174
+mas "1Password for Safari", id: 1569813296
+mas "JSONPeep", id: 1458969831
